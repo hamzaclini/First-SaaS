@@ -6,6 +6,9 @@ st.title("The most Fantabulous SaaS Ever! 🚀")
 
 add_auth(required=True)
 
+st.write(st.session_state.email)
+st.write(st.session_state.user_subscribed)
+
 st.write(f"Subscription Status: {st.session_state.user.subscribed}")
 st.write("🎉 Yay! You're all set and subscribed! 🎉")
 st.write(f"By the way, your email is: {st.session_state.email}")
